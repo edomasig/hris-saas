@@ -1,0 +1,248 @@
+############################
+# Security / Secrets
+############################
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.pfx
+*.crt
+secrets/
+config/local*.json
+
+############################
+# Logs & Reports
+############################
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+coverage/
+*.lcov
+reports/
+test-results/
+junit.xml
+
+############################
+# Dependency Folders
+############################
+node_modules/
+bower_components/
+jspm_packages/
+web_modules/
+
+############################
+# Build Outputs
+############################
+dist/
+build/
+out/
+target/
+bin/
+obj/
+release/
+Release/
+debug/
+Debug/
+public/build/
+.tmp/
+.cache/
+.next/
+.nuxt/
+.storybook-static/
+packages/*/dist/
+
+############################
+# Package Managers
+############################
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+# (Uncomment lockfile you actually use and delete others to enforce consistency)
+
+############################
+# TypeScript
+############################
+*.tsbuildinfo
+
+############################
+# Python
+############################
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.build/
+python_env/
+venv/
+.env.python/
+.mypy_cache/
+.pytest_cache/
+pip-wheel-metadata/
+.coverage
+htmlcov/
+
+############################
+# .NET / C#
+############################
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.nupkg
+project.lock.json
+artifacts/
+
+############################
+# Java / Kotlin
+############################
+*.class
+*.iml
+*.war
+*.ear
+*.jar
+hs_err_pid*
+.gradle/
+.gradle-cache/
+.gradle/
+build/
+
+############################
+# Go
+############################
+vendor/
+*.test
+cover.out
+
+############################
+# Frontend Assets
+############################
+*.bundle.*
+*.min.*.map
+*.map
+.sass-cache/
+.cache-loader/
+.cache/
+.parcel-cache/
+
+############################
+# Static Site / Framework
+############################
+.cache/
+.cache/**/*
+functions/.webpack/
+functions/node_modules/
+serverless/
+.amplify/
+
+############################
+# Docker
+############################
+docker-data/
+.docker/
+*.tar
+# Ignore generated compose override
+docker-compose.override.yml
+
+############################
+# Databases / Local Dev
+############################
+data/
+*.db
+*.sqlite
+*.sqlite3
+dump.rdb
+*.knexfile.local.js
+
+############################
+# Testing
+############################
+.vscode-test/
+cypress/videos/
+cypress/screenshots/
+playwright-report/
+test-output/
+
+############################
+# IDE & Editor
+############################
+.vscode/
+.vscode-test/
+.idea/
+*.swp
+*.swo
+*.orig
+*.bak
+*.tmp
+*.DS_Store
+Thumbs.db
+
+############################
+# Monorepo / Tooling
+############################
+.nx/cache/
+.nx/workspace-data/
+lerna-debug.log
+.pnp.*
+.pnp/
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+############################
+# Misc
+############################
+.DS_Store
+*.tgz
+*.zip
+*.7z
+*.tar.gz
+*.pid
+*.seed
+*.coverage
+lockfile.backup
+.cache/
+.cache/**
+
+############################
+# OpenAPI / Generated
+############################
+generated/
+api-client/
+sdk/
+
+############################
+# Terraform / IaC (if any)
+############################
+*.tfstate
+*.tfstate.*
+.terraform/
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+############################
+# Local Overrides
+############################
+local.settings.json
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+############################
+# Keep Examples
+############################
+# !/examples/**/dist/ (uncomment if you want example dist committed)

@@ -1,0 +1,33 @@
+@page "/employees"
+@inject HttpClient Http
+
+<h3>Employees</h3>
+
+@if (employees == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <ul>
+        @foreach (var emp in employees)
+        {
+            <li>@emp.Name (@emp.Position)</li>
+        }
+    </ul>
+}
+
+@code {
+    private List<EmployeeDto>? employees;
+
+    protected override async Task OnInitializedAsync()
+    {
+        employees = await Http.GetFromJsonAsync<List<EmployeeDto>>("api/employees");
+    }
+
+    public class EmployeeDto
+    {
+        public string Name { get; set; }
+        public string Position { get; set; }
+    }
+}
